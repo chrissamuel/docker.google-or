@@ -16,3 +16,5 @@ WORKDIR /home/googleor
 RUN su googleor -c "wget 'https://github.com/google/or-tools/releases/download/v4.3/or-tools_Ubuntu-16.04-64bit_v4.3.3802.tar.gz'"
 
 RUN su googleor -c "tar xf or-tools_Ubuntu-16.04-64bit_v4.3.3802.tar.gz"
+
+RUN su googleor -c "cd or-tools_Ubuntu-16.04-64bit_v4.3.3802; make"
